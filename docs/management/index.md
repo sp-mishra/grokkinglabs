@@ -34,4 +34,4 @@ This section contains 9 chapters organized in 2 subsections:
 
 ## Where to Start
 
-Begin with [Strategic Planning](./01-strategy-planning.md)
+[//]: # (Begin with [Strategic Planning]&#40;./01-strategy-planning.md&#41;)
