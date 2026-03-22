@@ -1,0 +1,136 @@
+site_name: Grokking Labs
+site_description: Deep dives into Distributed Systems, Machine Learning, Operations Research, Interactive Applications, and Management
+site_author: sp-mishra
+site_url: https://grokkinglabs.com
+
+theme:
+  name: material
+  features:
+    - navigation.instant          # Instant page loading
+    - navigation.tabs             # Horizontal tabs for main sections
+    - navigation.sections         # Expandable sections in sidebar
+    - navigation.expand           # Expand all sections by default
+    - toc.integrate               # Table of contents integrated in sidebar
+    - content.code.copy           # Copy button on code blocks
+    - search.suggest              # Search suggestions
+    - search.highlight            # Highlight search results
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.arithmatex
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - tables
+  - admonition
+
+nav:
+  - Home: index.md
+
+  - About: about.md
+
+  - Distributed Systems:
+    - Overview: distributed-systems/index.md
+    - Fundamentals:
+      - Introduction to Distributed Systems: distributed-systems/01-introduction.md
+      - Challenges & Concepts: distributed-systems/02-challenges.md
+    - Consistency & Data:
+      - Consistency Models: distributed-systems/03-consistency-models.md
+      - CAP Theorem: distributed-systems/04-cap-theorem.md
+    - Algorithms:
+      - Consensus Algorithms: distributed-systems/05-consensus.md
+      - Replication: distributed-systems/06-replication.md
+      - Leader Election: distributed-systems/07-leader-election.md
+    - Practice:
+      - Building a Distributed System: distributed-systems/08-practice.md
+      - Common Pitfalls: distributed-systems/09-pitfalls.md
+
+  - Machine Learning:
+    - Overview: machine-learning/index.md
+    - Foundations:
+      - Introduction to ML: machine-learning/01-introduction.md
+      - Linear Algebra Essentials: machine-learning/02-linear-algebra.md
+      - Statistics & Probability: machine-learning/03-statistics.md
+    - Supervised Learning:
+      - Regression: machine-learning/04-regression.md
+      - Classification: machine-learning/05-classification.md
+    - Deep Learning:
+      - Neural Networks Basics: machine-learning/06-neural-networks.md
+      - Convolutional Networks: machine-learning/07-cnn.md
+      - Recurrent Networks: machine-learning/08-rnn.md
+    - Transformers & LLMs:
+      - Attention Mechanism: machine-learning/09-attention.md
+      - Transformers Explained: machine-learning/10-transformers.md
+      - Large Language Models: machine-learning/11-llms.md
+    - Training & Optimization:
+      - Training Fundamentals: machine-learning/12-training.md
+      - Optimization Techniques: machine-learning/13-optimization.md
+      - Practical Tips: machine-learning/14-practical-tips.md
+
+  - Operations Research:
+    - Overview: operations-research/index.md
+    - Fundamentals:
+      - What is Operations Research: operations-research/01-introduction.md
+      - Linear Programming: operations-research/02-linear-programming.md
+    - Optimization:
+      - Optimization Techniques: operations-research/03-optimization.md
+      - Network Problems: operations-research/04-network-problems.md
+    - Applications:
+      - Supply Chain Optimization: operations-research/05-supply-chain.md
+      - Scheduling Problems: operations-research/06-scheduling.md
+      - Game Theory: operations-research/07-game-theory.md
+
+  - Interactive Applications:
+    - Overview: interactive-applications/index.md
+    - Gaming:
+      - Game Development Basics: interactive-applications/01-game-dev-basics.md
+      - Game Engines: interactive-applications/02-game-engines.md
+      - Game Design Patterns: interactive-applications/03-game-design-patterns.md
+    - Graphics:
+      - Graphics Fundamentals: interactive-applications/04-graphics-fundamentals.md
+      - Rendering Pipelines: interactive-applications/05-rendering.md
+      - Shaders: interactive-applications/06-shaders.md
+      - Ray Tracing: interactive-applications/07-ray-tracing.md
+    - Physics Engine:
+      - Physics Simulation Basics: interactive-applications/08-physics-basics.md
+      - Collision Detection: interactive-applications/09-collision-detection.md
+      - Rigid Body Dynamics: interactive-applications/10-rigid-body.md
+      - Soft Body & Constraints: interactive-applications/11-soft-body.md
+
+  - Management:
+    - Overview: management/index.md
+    - Strategy:
+      - Strategic Planning: management/01-strategy-planning.md
+      - Business Models: management/02-business-models.md
+      - Competitive Analysis: management/03-competitive-analysis.md
+      - Growth Strategies: management/04-growth-strategies.md
+    - Marketing:
+      - Marketing Fundamentals: management/05-marketing-fundamentals.md
+      - Digital Marketing: management/06-digital-marketing.md
+      - Content Strategy: management/07-content-strategy.md
+      - Brand Building: management/08-brand-building.md
+      - Analytics & Metrics: management/09-analytics.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sp-mishra
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/yourusername
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yourusername
+
+  analytics:
+    provider: google
+    property: UA-XXXXXXXXX-X  # Add your Google Analytics ID later
